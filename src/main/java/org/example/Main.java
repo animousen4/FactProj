@@ -7,10 +7,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        FactProcessor processor = new FactProcessor(BigInteger.valueOf(10));
+        FactProcessor processor = new FactProcessor(BigInteger.valueOf(2));
         ArrayList<BigInteger> res = processor.calculate();
-        for (int i = 0; i < res.size(); i++) {
-            System.out.println(res.get(i));
+        for (BigInteger re : res) {
+            System.out.println(re);
         }
     }
 }
